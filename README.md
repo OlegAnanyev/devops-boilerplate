@@ -6,7 +6,7 @@ $ ssh-agent bash
 $ ssh-add ~/.ssh/id_rsa
 ```
 
-
+---
 Запустить плейбук для всех хостов из инвентори hosts-all:
 ---
 
