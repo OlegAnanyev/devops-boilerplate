@@ -1,7 +1,10 @@
 -------------------------------------------
 Чтобы не вводить каждый раз passphrase:
+
+```bash
 $ ssh-agent bash
 $ ssh-add ~/.ssh/id_rsa
+```
 -------------------------------------------
 Запустить плейбук для всех хостов из инвентори hosts-all:
 ansible-playbook site.yml --ask-pass --ask-become-pass -i hosts-all
