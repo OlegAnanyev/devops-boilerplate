@@ -1,7 +1,6 @@
-
-
-Чтобы не вводить каждый раз passphrase:
 ---
+Чтобы не вводить каждый раз passphrase:
+
 
 ```bash
 $ ssh-agent bash
