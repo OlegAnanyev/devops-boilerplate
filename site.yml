@@ -1,0 +1,20 @@
+---
+# Play.
+
+- name: deploy pub ssh-key for non-aws instances
+  hosts: rio_instances
+  become: false
+  roles:
+    - ssh-key
+
+- name: apt update and so on
+  hosts: all
+  become: true
+  roles:
+    - common
+
+- name: install docker + docker-compose to all nodes
+  hosts: all
+  become: true
+  roles:
+    - "nickjj.docker"

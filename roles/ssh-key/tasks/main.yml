@@ -1,0 +1,23 @@
+---
+#
+# Tasks to be applied to all servers
+# Deploy public authorized keys
+
+- name: Check connectivity
+  ping:
+    data: alive
+
+- name: make direcotry
+  file:
+    path: "/home/{{ ansible_ssh_user }}/.ssh"
+    state: directory
+
+- name: create empty file
+  file:
+    path: "/home/{{ ansible_ssh_user }}/.ssh/authorized_keys"
+    state: touch
+
+- name: put pubkey
+  lineinfile:
+    path: "/home/{{ ansible_ssh_user }}/.ssh/authorized_keys"
+    line: "{{ pubkey }}"
