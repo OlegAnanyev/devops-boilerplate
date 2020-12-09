@@ -29,3 +29,7 @@ ansible-playbook site.yml --ask-pass --ask-become-pass -i hosts-all -l aws_insta
 ```bash
 git clone https://github.com/OlegAnanyev/flask-nginx-docker/ && cd flask-nginx-docker && docker-compose up --build && cd .. && rm -rf flask-nginx-docker/
 ```
+
+---
+...
+---
