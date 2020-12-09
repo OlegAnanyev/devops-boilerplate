@@ -6,6 +6,7 @@
 $ ssh-agent bash
 $ ssh-add ~/.ssh/id_rsa
 ```
+
 ---
 Запустить плейбук для всех хостов из инвентори hosts-all:
 ---
@@ -13,6 +14,7 @@ $ ssh-add ~/.ssh/id_rsa
 ```bash
 ansible-playbook site.yml --ask-pass --ask-become-pass -i hosts-all
 ```
+
 ---
 Запустить плейбук для хостов группы aws_instances из инвентори hosts-all:
 ---
@@ -20,6 +22,7 @@ ansible-playbook site.yml --ask-pass --ask-become-pass -i hosts-all
 ```bash
 ansible-playbook site.yml --ask-pass --ask-become-pass -i hosts-all -l aws_instances
 ```
+
 ---
 Команда для "одноразового" запуска тестового приложения на хосте с докером:
 ---
