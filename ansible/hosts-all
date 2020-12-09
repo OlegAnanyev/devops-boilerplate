@@ -1,5 +1,5 @@
 [aws_instances]
-aws_instance_1     ansible_host=13.49.102.118     ansible_user=ubuntu
+aws_instance_1     ansible_host=13.48.137.96     ansible_user=ubuntu
 
-[rio_instances]
-ubuntu_clean     ansible_host=192.168.52.110     ansible_user=ubuntu
+;[rio_instances]
+;ubuntu_clean     ansible_host=192.168.52.110     ansible_user=ubuntu
