@@ -1,0 +1,1 @@
+image_id = "ami-0a3a4169ad7cb0d77" # Ubuntu Server 20.04 LTS (HVM), SSD Volume Type
